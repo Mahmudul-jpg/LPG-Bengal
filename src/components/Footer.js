@@ -3,13 +3,15 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import {Button,Alert,Container,Row,Col} from 'react-bootstrap'
 import LOGO from '../images/logo.png'
 import location from '../images/location.png'
+import phone from '../images/phone.png'
+import email from '../images/email.png'
  function Footer() {
      const myStyle={
          width:"200px",
          heigth:"200px"
      }
   return (
-    <div style={{backgroundColor: "#1e1e1e !important",fontWeight:"bold"}}>
+    <div style={{backgroundColor: "#1e1e1e",fontWeight:"bold"}}>
         
         <Container style={{paddingTop:"20px"}} >
   <Row >
@@ -31,15 +33,17 @@ import location from '../images/location.png'
 
 <Row>
     <Col><p style={{color: "white",fontSize:'12px'}}>
-        <img src={location} />
+        <img src={location} />&ensp;
     Level 7, Richmond Concord Gulshan Ave,<br/> Dhaka 1212.</p></Col>
 </Row>
 <Row>
     <Col><h6 style={{color: "white",fontSize:'12px'}}>
-    +09609-009009</h6></Col>
+    <img src={phone} />&ensp;
+       +09609-009009</h6></Col>
 </Row>
 <Row>
     <Col><h6 style={{color: "white",fontSize:'12px'}}>
+    <img src={email} />&ensp;
     info@bengal.com.bd
 </h6></Col>
 </Row>
